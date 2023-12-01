@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORBE C Films</title>
+
+    <!-- Vincula las hojas de estilo directamente desde CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Estilos CSS personalizados -->
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5em;
+        }
+
+        #carrete {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .slick-slide {
+            text-align: center;
+        }
+
+        .slick-slide iframe {
+            width: 100%;
+        }
+
+        #nuestros-proyectos,
+        #nuestros-servicios {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        #carrete-servicios {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #carrete-servicios .slick-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #carrete-servicios img {
+            width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .servicio-texto {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #redes-sociales {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #redes-sociales a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        #contacto {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Regla de medios para dispositivos móviles */
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ORBE C Films</h1>
+    </header>
+
+    <div id="nuestros-proyectos">
+        <h2>Nuestros Proyectos</h2>
+    </div>
+
+    <div id="carrete">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2Pa6RBmFt90" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/elt6lH3Z9vY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cw49ECRCKu0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="nuestros-servicios">
+        <h2>Nuestros Servicios</h2>
+    </div>
+
+    <div id="carrete-servicios">
+        <div>
+            <img src="https://images.unsplash.com/photo-1493804714600-6edb1cd93080?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Proyectos Recientes">
+            <div class="servicio-texto">Video</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1554941426-a965fb2b9258?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Proyectos Recientes">
+            <div class="servicio-texto">Sonido</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1642547511815-7c2e51c17288?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Proyectos Recientes">
+            <div class="servicio-texto">Video xd</div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#carrete').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 6000
+            });
+
+            $('#carrete-servicios').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                appendDots: $('#nuestros-servicios'),
+            });
+        });
+    </script>
+
+    <div id="redes-sociales">
+        <a href="https://www.instagram.com/ronilio_/" target="_blank">Instagram</a>
+    </div>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con nosotros para más información:</p>
+        <p>Email: rtiz.ronny@gmail.com</p>
+        <p>Teléfono: 70295222</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ORBE C Films. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var carrusel = $('#carrete').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+
+            document.addEventListener("visibilitychange", function () {
+                if (document.hidden) {
+                    carrusel.slick('slickPause');
+                } else {
+                    carrusel.slick('slickPlay');
+                }
+            });
+
+            carrusel.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                var currentIframe = slick.$slides.eq(currentSlide).find('iframe');
+                var player = new YT.get(currentIframe.attr('id'));
+                player.pauseVideo();
+            });
+
+            carrusel.on('afterChange', function (event, slick, currentSlide) {
+                var currentIframe = slick.$slides.eq(currentSlide).find('iframe');
+                var player = new YT.get(currentIframe.attr('id'));
+                player.playVideo();
+            });
+        });
+
+        function onYouTubeIframeAPIReady() {
+            var iframes = $('iframe');
+            iframes.each(function (index) {
+                var iframeID = $(this).attr('id');
+                var player = new YT.Player(iframeID, {
+                    events: {
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                $('#carrete').slick('slickPause');
+            } else if (event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.PAUSED) {
+                $('#carrete').slick('slickPlay');
+            }
+        }
+    </script>
+</body>
+
+</html>
