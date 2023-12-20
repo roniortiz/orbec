@@ -69,7 +69,7 @@ header a {
 }
 
 #seccion1 {
-    flex-direction: column; /* Change to a column layout for mobile */
+    display: flex;
 }
 
 #seccion1 > div {
@@ -79,7 +79,6 @@ header a {
 
 #seccion1 .texto {
     background-color: #333; /* Color de fondo para la sección de texto */
-    margin-bottom: 20px; /* Add some margin between text and image for mobile */
 }
 
 #seccion1 img {
@@ -89,13 +88,14 @@ header a {
 
 /* Media query for screens with a maximum width of 600px (typical mobile devices) */
 @media screen and (max-width: 600px) {
-    header a {
-        font-size: 16px; /* Increase font size for better readability on mobile */
+    #seccion1 {
+        flex-direction: column; /* Change to a column layout for mobile */
     }
 
-    #seccion1 {
-        margin-top: 20px; /* Add some margin at the top for better spacing on mobile */
+    #seccion1 > div {
+        padding: 20px;
     }
+}
     </style>
 </head>
 
