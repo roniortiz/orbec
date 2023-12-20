@@ -62,7 +62,19 @@
         #logo img {
             max-width: 100%;
             height: auto;
+            animation: rotateLogo 5s linear infinite;
         }
+
+        /* rotar el logo: */
+
+        @keyframes rotateLogo {
+    from {
+        transform: rotate(0deg); /* Inicia la rotación desde 0 grados */
+    }
+    to {
+        transform: rotate(360deg); /* Termina la rotación en 360 grados (una vuelta completa) */
+    }
+}
 
         #suenos-texto {
             background-color: #333; /* Color de fondo para la sección de texto */
@@ -97,7 +109,7 @@
 
     <div id="contenido">
         <div id="logo">
-            <img src="ruta_de_logo2.jpg" alt="Logo 2">
+            <img src="imagenes/logo.png" alt="Logo 2">
         </div>
 
         <h2 id="suenos-texto">Nuestros Sueños</h2>
