@@ -13,78 +13,89 @@
     <!-- Estilos CSS personalizados -->
     <style>
         body {
-            background-color: #000; /* Negro */
-            color: #ffffff; /* Blanco */
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-        }
+    background-color: #000; /* Negro */
+    color: #ffffff; /* Blanco */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background-color: #111; /* Color de fondo para "quienes somos?" */
-            padding: 20px;
-            text-align: center;
-        }
+header {
+    background-color: #111; /* Color de fondo para "quienes somos?" */
+    padding: 20px;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 1.5em;
-            color: #fff; /* Color del texto */
-        }
+header h1 {
+    margin: 0;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    color: #fff; /* Color del texto */
+}
 
-        header div {
-            margin-top: 10px;
-        }
+header div {
+    margin-top: 10px;
+}
 
-        header a {
-            color: #ffffff; /* Letra blanca */
-            margin: 0 20px;
-            font-size: 18px;
-            text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
-        }
+header a {
+    color: #ffffff; /* Letra blanca */
+    margin: 0 10px;
+    font-size: 14px; /* Adjusted font size for mobile */
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-        #contenido {
-            padding: 20px;
-        }
+#contenido {
+    padding: 20px;
+}
 
-        #contenido > h2 {
-            color: #fff; /* Color del texto */
-        }
+#contenido > h2 {
+    color: #fff; /* Color del texto */
+}
 
-        #logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #222; /* Color de fondo para el logo */
-            padding: 20px;
-        }
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Color de fondo para el logo */
+    padding: 20px;
+}
 
-        #logo img {
-            max-width: 100%;
-            height: auto;
-        }
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
 
-        #seccion1 {
-            display: flex;
-        }
+#seccion1 {
+    flex-direction: column; /* Change to a column layout for mobile */
+}
 
-        #seccion1 > div {
-            flex: 1;
-            padding: 20px;
-        }
+#seccion1 > div {
+    flex: 1;
+    padding: 20px;
+}
 
-        #seccion1 .texto {
-            background-color: #333; /* Color de fondo para la sección de texto */
-        }
+#seccion1 .texto {
+    background-color: #333; /* Color de fondo para la sección de texto */
+    margin-bottom: 20px; /* Add some margin between text and image for mobile */
+}
 
-        #seccion1 img {
-            max-width: 100%;
-            height: auto;
-        }
+#seccion1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with a maximum width of 600px (typical mobile devices) */
+@media screen and (max-width: 600px) {
+    header a {
+        font-size: 16px; /* Increase font size for better readability on mobile */
+    }
+
+    #seccion1 {
+        margin-top: 20px; /* Add some margin at the top for better spacing on mobile */
+    }
     </style>
 </head>
 
