@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ORBE C Films</title>
 
     <!-- Vincula las hojas de estilo directamente desde CDN -->
@@ -17,16 +18,9 @@
     <!-- Estilos CSS personalizados -->
     <style>
 
-            /* Agregamos un estilo para los enlaces de las secciones */
-        header a.section-link {
-            color: #ffffff; /* Letra blanca */
-            margin: 0 20px;
-            font-size: 18px;
-            text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
-        }
+        /* Estilos para pantallas grandes (PC) */
 
-      body {
+body {
     background-color: #0000; /* Negro */
     color: #ffffff; /* Blanco */
     font-family: 'Courier New', Courier, monospace;
@@ -71,7 +65,15 @@
         padding: 10px; /* Reducir el espacio en la sección de contacto en dispositivos móviles */
     }
 }
-} /* termina para moviles */
+
+         /* Agregamos un estilo para los enlaces de las secciones */
+        header a.section-link {
+            color: #ffffff; /* Letra blanca */
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
 
         header {
             background-color: #000; /* negro */
@@ -185,11 +187,16 @@
 
 
         /* Regla de medios para dispositivos móviles */
-     @media screen and (max-width: 600px) {
+        @media screen and (max-width: 600px) {
             header h1 {
                 font-size: 1.2em;
+     #quienes-somos,
+    #nuestros-suenos {
+        display: none;
+    }
             }
         }
+
 
 
     </style>
@@ -215,6 +222,19 @@
     <div id="nuestros-proyectos">
         <h2>Nuestros Proyectos</h2>
     </div>
+
+
+    <div id="quienes-somos">
+        <h2>Quiénes somos</h2>
+        <!-- Contenido sobre quiénes son y su misión -->
+    </div>
+
+    <div id="nuestros-suenos">
+        <h2>Nuestros sueños</h2>
+        <!-- Contenido sobre sus sueños y objetivos -->
+    </div>
+
+
 
 
     <div id="carrete">
@@ -353,5 +373,7 @@
 
 
 </html>
+
+
 
 
