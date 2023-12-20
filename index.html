@@ -26,13 +26,51 @@
             font-family: 'Courier New', Courier, monospace;
         }
 
-        body {
-            background-color: #0000; /* Negro */
-            color: #ffffff; /* Blanco */
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-        }
+       body {
+    background-color: #0000; /* Negro */
+    color: #ffffff; /* Blanco */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Otras reglas de estilo para pantallas grandes */
+
+/* Reglas de estilo específicas para dispositivos móviles */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #000; /* Cambiar el fondo a negro para dispositivos móviles */
+    }
+
+    header {
+        padding: 10px; /* Reducir el espacio en la parte superior del encabezado en dispositivos móviles */
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reducir el tamaño del texto del encabezado en dispositivos móviles */
+    }
+
+    header a.section-link {
+        font-size: 16px; /* Reducir el tamaño de los enlaces de las secciones en dispositivos móviles */
+    }
+
+    #carrete, #carrete-servicios {
+        width: 100%; /* Hacer que los caruseles ocupen el ancho completo en dispositivos móviles */
+    }
+
+    #carrete-servicios img {
+        width: 100%; /* Hacer que las imágenes en el carrete de servicios ocupen el ancho completo */
+    }
+
+    #redes-sociales {
+        padding: 10px; /* Reducir el espacio en la parte inferior de las redes sociales en dispositivos móviles */
+    }
+
+    #contacto {
+        padding: 10px; /* Reducir el espacio en la sección de contacto en dispositivos móviles */
+    }
+} /* termina para moviles */
 
         header {
             background-color: #000; /* negro */
