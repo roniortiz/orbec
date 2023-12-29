@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbeC Blog</title>
+
+    <!-- Vincula las hojas de estilo directamente desde CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- Estilos CSS personalizados -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: #111; /* Fondo gris oscuro */
+        }
+
+        header h1 {
+            margin: 0;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5em;
+        }
+
+        header div {
+            margin-top: 10px;
+        }
+
+        header a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff; /* Texto blanco */
+        }
+
+        #contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Fondo negro */
+            padding: 20px;
+        }
+
+        #logo img {
+            max-width: 100%;
+            height: auto;
+            animation: rotateLogo 5s linear infinite;
+        }
+
+        @keyframes rotateLogo {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #navegacion {
+            background-color: #111; /* Fondo gris oscuro */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #navegacion a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff; /* Texto blanco */
+        }
+
+        #contenido-blanko {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            box-sizing: border-box;
+            border-top: 1px solid #fff; /* Franja blanca superior */
+        }
+
+        #texto {
+            width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #imagen {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        #imagen img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>OrbeC Blog</h1>
+        <div id="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="nuestros-suenos.html">Nuestros sueños</a>
+        </div>
+    </header>
+
+    <div id="contenido">
+        <div id="logo">
+            <img src="imagenes/logo.png" alt="Logo 2">
+        </div>
+
+        <div id="contenido-blanko">
+            <div id="texto">
+                <p>Me es dificil recordar cuando fue el dia exacto que dije "quiero tomar fotos".</p>
+                <p>Pero más o menos empece a los 14 cuando tuve mi primer celular. No tomaba fotos en si. pero hacia videos para youtube. Miraba un youtuber y didacticamente iba haciendo la edicion que el hacia. Lo importante era que aprendi que habia que mostrar las cosas en cámara</p>
+
+                 <p>A los 16 no reucerdo porque pero andaba que queria hacer eso y compre mi primera cámara. Una nikon coolprix 1800. De espejo y un gran zoom. No me gustaba mucho el pixel pero el color no puedo negar que estaba bueno. Aunque como veran a veces saturaba demasiado solo porque si algunas fotos. Además estaba de moda el Orange Teal.</p>
+
+                  <p>Aca dejo las fotos que tomaba en ese entonces. Creo que algunas las tome con el cel. Qué si no me equivoco era un samsung s5 gold. En ese tiempo trabajaba con mi papá, ya que como donde yo vivo era peligroso entonces no podia salir a jugar a la calle. y o me quedaba jugando minecraft en la casa todo el día o iba a trabajar con mi papá que me pagaba poco pero sentia que hacia algo. Cuando si me quedaba era cuando venia mi primo Wilmer ahi si lo explotaba para grabar videos. Aceptaba porque le prometia cosas. Como jugar algo que el quisiera. Prestarle algo que no le prestaba a nadie más o comprar y cocinar cosas y hacer un picnic. La cosa esque si ven que es fotogenico me adjudico eso xd.</p>
+
+
+
+            </div>
+
+            <div id="imagen">
+                <img src="imagenes/BI1.jpeg" alt="Imagen del blog">
+                <img src="imagenes/BI2.jpeg" alt="Imagen del blog">
+            </div>
+        </div>
+    </div>
+
+    <!-- Vincula los scripts de jQuery y Slick Carousel desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Agrega tu script personalizado aquí -->
+
+</body>
+
+</html>
