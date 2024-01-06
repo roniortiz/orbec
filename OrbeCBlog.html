@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbeC Blog</title>
+
+    <!-- Vincula las hojas de estilo directamente desde CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- Estilos CSS personalizados -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: #000; 
+            margin: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5em;
+        }
+
+        header div {
+            margin-top: 10px;
+        }
+
+       header a {
+            color: #fff; /* Letra blanca */
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    
+   #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #000; /* Negro */
+            margin-bottom: 20px; /* Añadido espacio entre el logo y el texto */
+        }
+
+        #logo img {
+            max-width: 100%;
+            height: auto;
+            animation: rotateLogo 5s linear infinite;
+        }
+
+
+        @keyframes rotateLogo {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        #contenido-blanko {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            box-sizing: border-box;
+            border-top: 1px solid #fff; /* Franja blanca superior */
+        }
+
+        #texto {
+            width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #imagen {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        #imagen img {
+            width: 50%;
+            height: auto;
+        
+                }
+    </style>
+</head>
+
+<body>
+
+    <header>
+            <div id="contenido">
+        <div id="logo">
+            <img src="imagenes/logo.png" alt="Logo 2">
+        </div>
+        <h1>OrbeC Blog</h1>
+            <a href="index.html">Inicio</a>
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="nuestros-suenos.html">Nuestros sueños</a>
+             <a href="OrbeCBlog.html" class="section-link">Orbe-C BLOG</a>
+        </div>
+    </header>
+
+
+
+        <div id="contenido-blanko">
+            <div id="texto">
+                <p>Esta semana no hay mucho para decir.</p>
+                <p>Termine el libro "Las ventajas de ser un marginado. y vi otra vez la pelicula. La verdad me gustaron las dos. El libro termina siento que demasiado brusco. El libro termina en la "Parte 4" y luego hay un prólogo donde te cuenta que estuvo en el hospital. Si me gusto, sobre todo porque dice que si no escribe mas cartas, que recordemos que aunque las cosas se pongan feas, estaremos bien. Eso es cierto, asi somos los humanos, luchando siempre para salir adelante, eso nos caracteriza, el amor es gasolina. Pero sin duda, el final de la pelicula me encanta más, aunque depues de leer el libro la pelicula se siente diferente y hay cosas que quisiera que fueran tan explicitas como en el libro. Pero bueno, mi consejo esque disfrutes de las dos. Tanto como la peli o el libro tienen su belleza.</p>
+
+                <p>También he visto "La red social" y me encanto. La actuacion de Jesse Eisenberg y Andrew me parecio muy buena, no digna de un oscar, pero realmente te pierdes en la pelicula no hay nada que distraiga. Obviamente también tiene que ver con la edicion y dirección, pero no quitemos merito a los actores, la verdad he estado en situaciones donde una actuacion me distrae muchisimo y no logro disfrutar la palicula. Por mencionarte un ejemplo en Wonka o El placer de dar placer.</p>
+
+            
+
+
+
+            </div>
+
+            <div id="imagen">
+                <img src="imagenes/imgblog.jpeg" alt="Imagen del blog">
+            </div>
+        </div>
+    </div>
+
+    <!-- Vincula los scripts de jQuery y Slick Carousel desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Agrega tu script personalizado aquí -->
+
+</body>
+
+</html>
