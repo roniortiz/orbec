@@ -127,6 +127,40 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        /**Movil**/
+
+        @media (max-width: 767px) {
+            #contenido-blanko {
+                flex-direction: column;
+                align-items: center;
+            }
+            #texto, #imagen {
+                width: 100%;
+            }
+        }
+
+        /**Tablet**/
+
+        @media (min-width: 768px) and (max-width: 990px) {
+            #texto {
+                width: 50%;
+            }
+            #imagen {
+                width: 50%;
+            }
+        }
+
+        /**Escritorio**/
+
+        @media (min-width: 991px) {
+            #texto {
+                width: 50%;
+            }
+            #imagen {
+                width: 50%;
+            }
+        }
     </style>
 </head>
 
@@ -162,11 +196,11 @@
     <!-- Sección del mural de imágenes -->
     <div id="mural">
         <!-- Agrega las imágenes aquí -->
-        <img src="imagenes/1.JPG" alt="Imagen 1">
-        <img src="imagenes/2.JPG" alt="Imagen 2">
-        <img src="imagenes/3.JPG" alt="Imagen 3">
-       <img src="imagenes/4.JPG" alt="Imagen 4">
-          <img src="imagenes/5.JPG" alt="Imagen 5">
+        <img src="imagenes/1.jpg" alt="Imagen 1">
+        <img src="imagenes/2.jpg" alt="Imagen 2">
+        <img src="imagenes/3.jpg" alt="Imagen 3">
+        <img src="imagenes/4.jpg" alt="Imagen 4">
+        <img src="imagenes/5.jpg" alt="Imagen 5">
         <!-- Continúa con más imágenes según sea necesario -->
     </div>
 
@@ -193,4 +227,5 @@
 </body>
 
 </html>
+
 
