@@ -39,7 +39,7 @@
             margin-top: 10px;
         }
 
-       header a {
+        header a {
             color: #fff; /* Letra blanca */
             margin: 0 20px;
             font-size: 18px;
@@ -47,8 +47,7 @@
             font-family: 'Courier New', Courier, monospace;
         }
 
-    
-   #logo {
+        #logo {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,7 +62,6 @@
             animation: rotateLogo 5s linear infinite;
         }
 
-
         @keyframes rotateLogo {
             from {
                 transform: rotate(0deg);
@@ -73,8 +71,6 @@
             }
         }
 
-
-
         #contenido-blanko {
             background-color: #fff; /* Fondo blanco */
             color: #000; /* Texto negro */
@@ -83,7 +79,6 @@
             justify-content: space-around;
             width: 100%;
             box-sizing: border-box;
-            border-top: 1px solid #fff; /* Franja blanca superior */
         }
 
         #texto {
@@ -100,46 +95,94 @@
         #imagen img {
             width: 50%;
             height: auto;
-        
-                }
+        }
+
+        /* Estilos para la sección del mural de imágenes */
+        #mural {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 20px; /* Añadido margen inferior */
+        }
+
+        #mural img {
+            width: 30%; /* Ajusta el ancho de las imágenes */
+            margin-bottom: 20px;
+        }
+
+        #titulo-fotos {
+            text-align: center;
+            margin-bottom: 20px; /* Añadido margen inferior */
+        }
+
+        #redes-sociales {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #contacto {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-            <div id="contenido">
-        <div id="logo">
-            <img src="imagenes/logo.png" alt="Logo 2">
-        </div>
-        <h1>OrbeC Blog</h1>
+        <div id="contenido">
+            <div id="logo">
+                <img src="imagenes/logo.png" alt="Logo 2">
+            </div>
+            <h1>OrbeC Blog</h1>
             <a href="index.html">Inicio</a>
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="nuestros-suenos.html">Nuestros sueños</a>
-             <a href="OrbeCBlog.html" class="section-link">Orbe-C BLOG</a>
+            <a href="OrbeCBlog.html" class="section-link">Orbe-C BLOG</a>
         </div>
     </header>
 
+    <div id="contenido-blanko">
+        <div id="texto">
+            <p>Esta semana no hay mucho para decir.</p>
+            <p>Terminé el libro "Las ventajas de ser un marginado" y vi otra vez la película. La verdad me gustaron las dos. El libro termina siendo que demasiado brusco. El libro termina en la "Parte 4" y luego hay un prólogo donde te cuenta que estuvo en el hospital. Sí me gustó, sobre todo porque dice que si no escribe más cartas, que recordemos que aunque las cosas se pongan feas, estaremos bien. Eso es cierto, así somos los humanos, luchando siempre para salir adelante, eso nos caracteriza, el amor es gasolina. Pero sin duda, el final de la película me encanta más, aunque después de leer el libro la película se siente diferente y hay cosas que quisiera que fueran tan explícitas como en el libro. Pero bueno, mi consejo es que disfrutes de las dos. Tanto la peli o el libro tienen su belleza.</p>
+            <p>También he visto "La red social" y me encantó. La actuación de Jesse Eisenberg y Andrew me pareció muy buena, no digna de un Oscar, pero realmente te pierdes en la película no hay nada que distraiga. Obviamente también tiene que ver con la edición y dirección, pero no quitemos mérito a los actores, la verdad he estado en situaciones donde una actuación me distrae muchísimo y no logro disfrutar la película. Por mencionarte un ejemplo en Wonka o El placer de dar placer.</p>
+        </div>
 
-
-        <div id="contenido-blanko">
-            <div id="texto">
-                <p>Esta semana no hay mucho para decir.</p>
-                <p>Termine el libro "Las ventajas de ser un marginado. y vi otra vez la pelicula. La verdad me gustaron las dos. El libro termina siento que demasiado brusco. El libro termina en la "Parte 4" y luego hay un prólogo donde te cuenta que estuvo en el hospital. Si me gusto, sobre todo porque dice que si no escribe mas cartas, que recordemos que aunque las cosas se pongan feas, estaremos bien. Eso es cierto, asi somos los humanos, luchando siempre para salir adelante, eso nos caracteriza, el amor es gasolina. Pero sin duda, el final de la pelicula me encanta más, aunque depues de leer el libro la pelicula se siente diferente y hay cosas que quisiera que fueran tan explicitas como en el libro. Pero bueno, mi consejo esque disfrutes de las dos. Tanto como la peli o el libro tienen su belleza.</p>
-
-                <p>También he visto "La red social" y me encanto. La actuacion de Jesse Eisenberg y Andrew me parecio muy buena, no digna de un oscar, pero realmente te pierdes en la pelicula no hay nada que distraiga. Obviamente también tiene que ver con la edicion y dirección, pero no quitemos merito a los actores, la verdad he estado en situaciones donde una actuacion me distrae muchisimo y no logro disfrutar la palicula. Por mencionarte un ejemplo en Wonka o El placer de dar placer.</p>
-
-            
-
-
-
-            </div>
-
-            <div id="imagen">
-                <img src="imagenes/imgblog.jpeg" alt="Imagen del blog">
-            </div>
+        <div id="imagen">
+            <img src="imagenes/imgblog.jpeg" alt="Imagen del blog">
         </div>
     </div>
+
+    <!-- Título para el mural de fotos -->
+    <h2 id="titulo-fotos">Fotos del mes</h2>
+
+    <!-- Sección del mural de imágenes -->
+    <div id="mural">
+        <!-- Agrega las imágenes aquí -->
+        <img src="imagenes/1.jpg" alt="Imagen 1">
+        <img src="imagenes/2.jpg" alt="Imagen 2">
+        <img src="imagenes/3.jpg" alt="Imagen 3">
+       <img src="imagenes/4.jpg" alt="Imagen 4">
+          <img src="imagenes/5.jpg" alt="Imagen 5">
+        <!-- Continúa con más imágenes según sea necesario -->
+    </div>
+
+    <!-- Sección de redes sociales -->
+    <div id="redes-sociales">
+        <a href="https://www.instagram.com/ronilio_/" target="_blank">Instagram</a>
+    </div>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <p>HAGAMOS REALIDAD TUS HISTORIAS</p>
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con nosotros para más información:</p>
+        <p>Email: rtiz.ronny@gmail.com</p>
+        <p>Teléfono: 70295222</p>
+    </section>
 
     <!-- Vincula los scripts de jQuery y Slick Carousel desde CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -150,3 +193,4 @@
 </body>
 
 </html>
+
