@@ -68,6 +68,7 @@
             text-decoration: none;
             font-family: 'Courier New', Courier, monospace;
         }
+        
 
  /* preloader */
         #preloader {
@@ -93,16 +94,18 @@
     animation: rotate 2s linear infinite; /* Animación de rotación */
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
-         /* hasta aca el preloader */
+         /* Termina pre Loader*/
+
+/* Rotar el logo */
+        @keyframes rotateLogo {
+            from {
+                transform: rotate(0deg); /* Inicia la rotación desde 0 grados */
+            }
+            to {
+                transform: rotate(360deg); /* Termina la rotación en 360 grados (una vuelta completa) */
+            }
+        }
 
         
 
