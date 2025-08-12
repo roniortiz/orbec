@@ -89,6 +89,28 @@
             height: 150px;
         }
 
+         #logo {
+            background-color: #000; /* Negro */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #logo img {
+            max-width: 100%;
+            height: auto;
+            animation: rotateLogo 5s linear infinite;
+        }
+
+        /* Rotar el logo */
+        @keyframes rotateLogo {
+            from {
+                transform: rotate(0deg); /* Inicia la rotación desde 0 grados */
+            }
+            to {
+                transform: rotate(360deg); /* Termina la rotación en 360 grados (una vuelta completa) */
+            }
+        }
+
         @keyframes rotate Logo{
             from { transform: (0deg); } 
             to { transform: rotate(360deg); }
@@ -380,6 +402,7 @@
 </body>
 
 </html>
+
 
 
 
