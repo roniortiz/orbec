@@ -993,8 +993,8 @@ header a:hover::after {
 }
 
 .cliente-item img {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 220px;
     object-fit: contain;
     opacity: 0.75;
     filter: grayscale(100%);
