@@ -996,7 +996,7 @@ header a:hover::after {
 
 .cliente-item img {
     width: 300px;
-    height: 220px;
+    height: auto;
     object-fit: contain;
     opacity: 0.75;
     filter: grayscale(100%);
