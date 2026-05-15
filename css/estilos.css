@@ -954,10 +954,19 @@ header a:hover::after {
     height: 390px;
   }
 }
+
 /* ===== CLIENTES ===== */
 #clientes {
     background-color: var(--blanco);
-    padding: 54px 40px;
+    width: 100vw;
+    min-height: 100vh;
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -968,7 +977,7 @@ header a:hover::after {
     font-weight: 600;
     letter-spacing: 4px;
     text-transform: uppercase;
-    margin: 0 0 44px;
+    margin: 0 0 70px;
     display: inline-block;
     position: relative;
 }
@@ -988,13 +997,15 @@ header a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
     flex-wrap: wrap;
+    padding: 0 80px;
 }
 
 .cliente-item img {
     width: 300px;
-    height: 220px;
+    height: auto;
+    max-height: 160px;
     object-fit: contain;
     opacity: 0.75;
     filter: grayscale(100%);
@@ -1007,7 +1018,12 @@ header a:hover::after {
     transform: scale(1.07);
 }
 
-@media (max-width: 600px) {
-    #logos-clientes { gap: 28px; }
-    .cliente-item img { width: 110px; height: 55px; }
+@media (max-width: 768px) {
+    #logos-clientes { gap: 50px; padding: 0 30px; }
+    .cliente-item img { width: 180px; max-height: 100px; }
+}
+
+@media (max-width: 480px) {
+    #logos-clientes { gap: 35px; }
+    .cliente-item img { width: 140px; max-height: 80px; }
 }
