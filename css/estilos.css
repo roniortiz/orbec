@@ -1011,5 +1011,5 @@ header a:hover::after {
 
 @media (max-width: 600px) {
     #logos-clientes { gap: 28px; }
-    .cliente-item img { width: 110px; height: 55px; }
+    .cliente-item img { width: 150px; height: 80px; }
 }
